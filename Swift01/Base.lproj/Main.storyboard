@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gDb-2W-5h1">
+                                <rect key="frame" x="104" y="211" width="180" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8Zm-3H-J4B" id="uXL-CZ-COC"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFN-XF-e4e">
+                                <rect key="frame" x="143" y="368" width="89" height="30"/>
+                                <state key="normal" title="Confirmation"/>
+                                <connections>
+                                    <action selector="confirmerNom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmx-y3-AbH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-Wv-vea">
+                                <rect key="frame" x="155" y="20" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GFN-XF-e4e" secondAttribute="bottom" constant="269" id="4Rq-bo-MOQ"/>
+                            <constraint firstItem="mXQ-Wv-vea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="139" id="4wM-yr-u2k"/>
+                            <constraint firstItem="GFN-XF-e4e" firstAttribute="top" secondItem="gDb-2W-5h1" secondAttribute="bottom" constant="127" id="Abm-lL-Ifm"/>
+                            <constraint firstItem="GFN-XF-e4e" firstAttribute="top" secondItem="gDb-2W-5h1" secondAttribute="bottom" constant="127" id="GcT-yV-y74"/>
+                            <constraint firstItem="GFN-XF-e4e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ous-Qh-aDZ"/>
+                            <constraint firstItem="gDb-2W-5h1" firstAttribute="top" secondItem="mXQ-Wv-vea" secondAttribute="bottom" constant="170" id="PZq-OW-RRJ"/>
+                            <constraint firstItem="GFN-XF-e4e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="127" id="UPV-DY-qcw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GFN-XF-e4e" secondAttribute="trailing" constant="127" id="ZQ6-Pe-rDt"/>
+                            <constraint firstItem="mXQ-Wv-vea" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zx0-dA-Fd9"/>
+                            <constraint firstItem="gDb-2W-5h1" firstAttribute="top" secondItem="mXQ-Wv-vea" secondAttribute="bottom" constant="170" id="bYq-ZN-Ell"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gDb-2W-5h1" secondAttribute="trailing" constant="75" id="gwy-yx-8Lg"/>
+                            <constraint firstItem="gDb-2W-5h1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="vKb-zx-R65"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mXQ-Wv-vea" secondAttribute="trailing" constant="139" id="vf3-ci-XNG"/>
+                            <constraint firstItem="mXQ-Wv-vea" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zag-4Y-NhH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonItem" destination="GFN-XF-e4e" id="H88-vK-F33"/>
+                        <outlet property="saisirTitle" destination="gDb-2W-5h1" id="qWo-sD-d2J"/>
+                        <outlet property="titleLabel" destination="mXQ-Wv-vea" id="Htw-gh-Ov1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="8Zm-3H-J4B" customClass="MyTextFieldDelegate" customModule="Swift01" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="134"/>
+        </scene>
+    </scenes>
+</document>
